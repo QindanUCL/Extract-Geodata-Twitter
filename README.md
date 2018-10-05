@@ -3,6 +3,7 @@
 
 推特API直接提取的地理数据通常有限（仅限于当用户分享定位的情况）。
 Mikael Brunila提供了一种从推特中提取到更多地理数据的方法：[戳这里](http://www.mikaelbrunila.fi/2017/03/27/scraping-extracting-mapping-geodata-twitter/)
+
 其方法大致如下：
 * 直接获取推文的定位信息（坐标或定位标签）
 * 从用户的账号信息里提取
@@ -11,6 +12,7 @@ Mikael Brunila提供了一种从推特中提取到更多地理数据的方法：
 
 在Mikael的方法获得的数据基础上，可经过进一步清洗和整理得到所需的地理数据。
 这里以提取伦敦市镇的地理信息为例（代码见“Twitter_Location.ipynb"）。
+
 **原理：**
 由前一步得到的地理数据（储存在”primary_geo"一栏）可分为以下几种类型：
 1. 发推地点的具体坐标定位
